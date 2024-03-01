@@ -1,3 +1,6 @@
+import IconEye from "@/assets/IconEye";
+import PasswordInput from "@/components/PasswordInput.tsx";
+
 export default function Login() {
   return (
     <main className="grid h-full place-items-center bg-gradient-linear p-24">
@@ -13,13 +16,7 @@ export default function Login() {
               placeholder="Email Address"
               autoComplete="off"
             />
-            <input
-              className="w-full rounded-lg bg-black px-4 py-3 text-sm text-white"
-              id="password-input"
-              name="password"
-              type="password"
-              placeholder="Password"
-            />
+            <PasswordInput />
           </div>
           <div className="flex flex-col gap-1 text-xs">
             <a className="text-gray-500 w-fit" href="">
@@ -29,7 +26,11 @@ export default function Login() {
               Don't have an account? Sign up!
             </a>
           </div>
-          <button></button>
+          <button type="submit" className="bg-hurd-purple-light uppercase text-white text-xs rounded-lg">
+            <div className="p-3">
+              login
+            </div>
+          </button>
         </form>
       </div>
     </main>
