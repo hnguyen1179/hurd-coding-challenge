@@ -23,7 +23,7 @@ export default function Login() {
 
   return (
     <main className="flex h-full items-center justify-center bg-gradient-linear sm:p-24">
-      <div className="-mt-16 flex h-[30rem] w-full grow flex-col gap-4 rounded-lg bg-black bg-opacity-85 p-8 sm:max-w-[30rem] md:p-12">
+      <div className="-mt-16 flex h-[30rem] w-full grow flex-col gap-4 sm:rounded-lg bg-black bg-opacity-85 p-8 sm:max-w-[30rem] md:p-12">
         <div className="text-hurd-purple-light my-4 text-5xl font-semibold">
           hurd
         </div>
