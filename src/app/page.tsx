@@ -1,12 +1,29 @@
-import IconEye from "@/assets/IconEye";
+"use client";
+
 import PasswordInput from "@/components/PasswordInput.tsx";
+import { FormEvent } from "react";
 
 export default function Login() {
+  const handleSubmission = (event: FormEvent<HTMLFormElement>) => {
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    alert(
+      `Submitted form with email as ${formData.get("email")} and password as ${formData.get("password")}`,
+    );
+  };
+
   return (
-    <main className="grid h-full place-items-center bg-gradient-linear p-24">
-      <div className="flex h-[30rem] w-[30rem] flex-col gap-4 rounded-lg bg-black bg-opacity-90 px-8 py-16">
-        <div className="text-hurd-purple-light text-5xl font-bold">hurd</div>
-        <form className="flex flex-col gap-4" action="">
+    <main className="flex h-full items-center justify-center bg-gradient-linear p-24">
+      <div className="flex h-[30rem] max-w-[30rem] grow flex-col gap-4 rounded-lg bg-black bg-opacity-90 p-12">
+        <div className="text-hurd-purple-light my-4 text-5xl font-semibold">
+          hurd
+        </div>
+        <form
+          className="flex flex-col gap-4"
+          action=""
+          onSubmit={handleSubmission}
+        >
           <div className="flex flex-col gap-3">
             <input
               className="w-full rounded-lg bg-black px-4 py-3 text-sm text-white"
@@ -19,17 +36,18 @@ export default function Login() {
             <PasswordInput />
           </div>
           <div className="flex flex-col gap-1 text-xs">
-            <a className="text-gray-500 w-fit" href="">
+            <a className="w-fit text-gray-500 hover:underline" href="">
               Forgot Password?
             </a>
-            <a className="text-blue-600 w-fit" href="">
+            <a className="w-fit text-blue-600 hover:underline" href="">
               Don't have an account? Sign up!
             </a>
           </div>
-          <button type="submit" className="bg-hurd-purple-light uppercase text-white text-xs rounded-lg">
-            <div className="p-3">
-              login
-            </div>
+          <button
+            type="submit"
+            className="bg-hurd-purple-light my-4 rounded-lg text-xs font-semibold uppercase text-white"
+          >
+            <div className="p-3">login</div>
           </button>
         </form>
       </div>
