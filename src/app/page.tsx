@@ -53,9 +53,9 @@ export default function Login() {
           </div>
           <button
             type="submit"
-            className="bg-hurd-purple-light my-4 rounded-lg text-xs font-semibold uppercase text-white"
+            className="bg-hurd-purple-light my-4 rounded-lg font-semibold uppercase text-white hover:opacity-90"
           >
-            <div className="p-3">login</div>
+            <div className="p-4 text-sm">login</div>
           </button>
         </form>
       </div>
