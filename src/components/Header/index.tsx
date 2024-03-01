@@ -1,13 +1,11 @@
-import React from "react";
-
 const Header = () => {
-	return (
-		<header className="bg-hurd-purple p-2 flex">
-			<a className="text-stone-400" href="/">
-				hurd
-			</a>
-		</header>
-	);
+  return (
+    <header className="flex bg-hurd-purple bg-opacity-95 px-8 py-4">
+      <a className="text-xl font-semibold text-stone-400" href="/">
+        hurd
+      </a>
+    </header>
+  );
 };
 
 export default Header;
