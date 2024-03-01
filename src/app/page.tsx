@@ -16,16 +16,14 @@ export default function Login() {
       alert("Form incomplete!");
       event.preventDefault(); // Prevents form from submission--resetting the form
     } else {
-      alert(
-        `Submitted form with email as ${formData.get("email")} and password as ${formData.get("password")}`,
-      );
+      alert(`Submitted form with email as ${email} and password as ${pw}`);
     }
   };
 
   return (
     <main className="flex h-full items-center justify-center bg-gradient-linear sm:p-24">
       <div className="-mt-16 flex h-[30rem] w-full grow flex-col gap-4 bg-black bg-opacity-85 p-8 sm:max-w-[30rem] sm:rounded-lg md:p-12">
-        <div className="text-hurd-purple-light my-4 text-5xl font-semibold">
+        <div className="my-4 text-5xl font-semibold text-hurd-purple-light">
           hurd
         </div>
         <form
@@ -42,12 +40,12 @@ export default function Login() {
               Forgot Password?
             </a>
             <a className="w-fit text-blue-600 hover:underline" href="">
-              Don't have an account? Sign up!
+              Don&apos;t have an account? Sign up!
             </a>
           </div>
           <button
             type="submit"
-            className="bg-hurd-purple-light my-4 rounded-lg font-semibold uppercase text-white transition hover:opacity-90 active:scale-[97%]"
+            className="my-4 rounded-lg bg-hurd-purple-light font-semibold uppercase text-white transition hover:opacity-90 active:scale-[97%]"
           >
             <div className="p-4 text-sm">login</div>
           </button>

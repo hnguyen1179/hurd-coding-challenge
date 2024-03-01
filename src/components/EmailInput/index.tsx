@@ -1,10 +1,11 @@
 const EmailInput = () => {
-	/**
-	 * Ideally, we'd have email validation living in here to free up 
-	 * room for our actual page component + add modularity in the event
-	 * we have a separate area where we need email validation. Maybe modal
-	 * somewhere in the app when users require authentication
-	 */
+  /**
+   * Ideally, we'd have email validation living in here to free up
+   * room for our actual page component + add needed reusability in the event
+   * we have a separate area where we need email validation. 
+   * 
+   * Maybe a modal somewhere in the app when users require authentication
+   */
 
   return (
     <input
