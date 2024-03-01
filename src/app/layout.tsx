@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const inter = Inter({
   subsets: ["latin"],
   preload: true,
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "600"],
 });
 
 export default function RootLayout({
