@@ -1,6 +1,7 @@
 "use client";
 
-import PasswordInput from "@/components/PasswordInput.tsx";
+import EmailInput from "@/components/EmailInput";
+import PasswordInput from "@/components/PasswordInput";
 import { FormEvent } from "react";
 
 export default function Login() {
@@ -23,7 +24,7 @@ export default function Login() {
 
   return (
     <main className="flex h-full items-center justify-center bg-gradient-linear sm:p-24">
-      <div className="-mt-16 flex h-[30rem] w-full grow flex-col gap-4 sm:rounded-lg bg-black bg-opacity-85 p-8 sm:max-w-[30rem] md:p-12">
+      <div className="-mt-16 flex h-[30rem] w-full grow flex-col gap-4 bg-black bg-opacity-85 p-8 sm:max-w-[30rem] sm:rounded-lg md:p-12">
         <div className="text-hurd-purple-light my-4 text-5xl font-semibold">
           hurd
         </div>
@@ -33,14 +34,7 @@ export default function Login() {
           onSubmit={handleSubmission}
         >
           <div className="flex flex-col gap-3">
-            <input
-              className="w-full rounded-lg bg-black px-4 py-3 text-sm text-white"
-              id="email-input"
-              name="email"
-              type="text"
-              placeholder="Email Address"
-              autoComplete="off"
-            />
+            <EmailInput />
             <PasswordInput />
           </div>
           <div className="flex flex-col gap-1 text-xs">
