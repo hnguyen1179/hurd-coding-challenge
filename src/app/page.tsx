@@ -13,7 +13,7 @@ export default function Login() {
 
     if (!email || !pw) {
       alert("Form incomplete!");
-      event.preventDefault(); // Prevents form from submittion--resetting the form
+      event.preventDefault(); // Prevents form from submission--resetting the form
     } else {
       alert(
         `Submitted form with email as ${formData.get("email")} and password as ${formData.get("password")}`,
