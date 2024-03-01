@@ -10,7 +10,7 @@ const PasswordInput = () => {
   const togglePassword = () => setShowPassword((prev) => !prev);
 
   return (
-    <div className="relative">
+    <div className="relative cursor-pointer">
 			<input
 				// pr-16 prevents password from overlapping toggle reveal password button
         className="w-full rounded-lg bg-black pl-4 pr-16 py-3 text-sm text-white"
@@ -19,12 +19,13 @@ const PasswordInput = () => {
         type={showPassword ? "text" : "password"}
         placeholder="Password"
       />
-      <div
+			<button
+				type="button"
         className="absolute top-1/4 right-6 h-6 w-6 text-white"
         onClick={togglePassword}
       >
         {showPassword ? <IconEyeInvisible /> : <IconEye />}
-      </div>
+      </button>
     </div>
   );
 };
