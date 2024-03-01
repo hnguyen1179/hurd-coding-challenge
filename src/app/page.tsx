@@ -53,7 +53,7 @@ export default function Login() {
           </div>
           <button
             type="submit"
-            className="bg-hurd-purple-light my-4 rounded-lg font-semibold uppercase text-white hover:opacity-90"
+            className="bg-hurd-purple-light my-4 rounded-lg font-semibold uppercase text-white transition hover:opacity-90 active:scale-[97%]"
           >
             <div className="p-4 text-sm">login</div>
           </button>
