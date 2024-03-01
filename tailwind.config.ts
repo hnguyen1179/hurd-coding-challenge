@@ -16,7 +16,6 @@ const config: Config = {
         "hurd-purple": "#7128CD",
         "hurd-purple-light": "#6872E5",
         "hurd-black": "#121212",
-        "hurd-charcoal": "#231922",
       },
     },
   },

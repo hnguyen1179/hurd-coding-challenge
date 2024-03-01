@@ -8,7 +8,11 @@ export const metadata: Metadata = {
   description: "Hurd Coding Challenge",
 };
 
-const inter = Inter({ subsets: ["latin"], preload: true, weight: "400" });
+const inter = Inter({
+  subsets: ["latin"],
+  preload: true,
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export default function RootLayout({
   children,
